@@ -1,0 +1,64 @@
+body {
+  padding-top: 20px;
+}
+
+
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+}
+.nav-justified > li > a {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  font-weight: bold;
+  color: crimson;
+  font-size: 15px;
+  text-align: center;
+  border-top: 40px solid #fff;
+  border-bottom: 50px solid crimson;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transition: All 0.5s;
+  box-shadow: 0 0 10px 2px black;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus,
+.nav-justified > li > a:hover {
+  color: white;
+  border-top: 15px solid #fff;
+  border-bottom: 35px solid crimson;
+  background-color: black;
+  border-radius: 100%;
+}
+.nav-justified > li:first-child > a {
+}
+.nav-justified > li:last-child > a {
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+  }
+  .nav-justified > li:first-child > a {
+  }
+  .nav-justified > li:last-child > a {
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
